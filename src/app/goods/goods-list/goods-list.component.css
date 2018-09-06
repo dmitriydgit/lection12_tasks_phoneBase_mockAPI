@@ -1,0 +1,44 @@
+.user-card {
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.jumbotron {
+  padding: 30px;
+}
+
+.buttons{
+	/* margin: 2% ; */
+	font-size:14px;
+	
+	
+}
+
+.phone-card{
+	border: 2px solid #bebbbb;
+	border-radius: 5px;
+	margin: 10px;
+	padding:10px;
+	height:450px;
+
+
+}
+
+.card-title{
+	font-size: 16px;
+}
+
+.myForm {
+	
+	margin: 0 35%;
+}
+
+.card-buttons{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}

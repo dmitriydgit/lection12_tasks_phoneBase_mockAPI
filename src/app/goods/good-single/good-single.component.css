@@ -1,0 +1,33 @@
+.card-wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 70%;
+	margin: 0 auto;
+	border: 2px solid #555454;
+border-radius: 10px;
+background-color: #fff;
+}
+
+.card-description{
+	background-color: #fff;
+	margin: 0 2%;
+	font-size: 150%;
+	width: 550px;
+}
+
+.img-rounded{
+	margin: 2%;
+	height: 50%;
+}
+
+.buttons{
+/* margin: 5%  5%; */
+font-size: 80%;
+}
+
+.myForm{
+	width: 550px;
+	margin: 2% auto;
+}

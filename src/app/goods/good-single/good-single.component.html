@@ -1,0 +1,25 @@
+<div>
+	<button class="buttons btn btn-primary" (click)="goBack()">назад</button>
+
+	<div class="card-wrapper">
+
+		<img [src]="good?.photo" class="img-rounded">
+		<div *ngIf="!edit" class="card-description">
+
+			<h2>{{ good?.name }}</h2>
+			<p>{{good?.description}}</p>
+			<p>Остаток: {{good?.qty }}</p>
+
+			<div class="buttons">
+
+			</div>
+			<button class="buttons btn btn-primary" (click)="changePhoneData()">Изменить</button>
+			<button class="buttons btn btn-primary" (click)="delete()">Удалить</button>
+		</div>
+		<div class="myForm" *ngIf="edit">
+			<app-updating-form [good]="good" (edit)="finishUpdating($event)"> </app-updating-form>
+
+		</div>
+
+
+	</div>

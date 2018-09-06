@@ -1,0 +1,32 @@
+<div>
+	<h2>Phone properties</h2>
+</div>
+
+<div class="myForm">
+	<form [formGroup]="form">
+		<div>
+			<label for="phoneName">Name:
+			</label>
+			<input class="formField" name="phoneName" formControlName="phoneName" required>
+		</div>
+		<div>
+			<label for="phonePhoto">Photo:
+			</label>
+			<input class="formField" name="phonePhoto" formControlName="phonePhoto" required>
+		</div>
+
+		<div>
+			<label for="phoneDescription">Description:
+			</label>
+			<textarea class="formField" name="phoneDescription" formControlName="phoneDescription" rows="8" required> </textarea>
+		</div>
+		<div>
+			<label for="phoneQty">Quantity:
+			</label>
+			<input class="formField" name="phoneQty" formControlName="phoneQty" required>
+		</div>
+	</form>
+
+	<button class="submit-button btn btn-primary" type="text" (click)="save()">Сохранить</button>
+
+</div>

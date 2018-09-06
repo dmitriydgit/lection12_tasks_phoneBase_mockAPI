@@ -1,0 +1,35 @@
+<button class="buttons btn btn-primary" *ngIf="!adding" (click)="addPhone()">Добавить телефон</button>
+<button class="buttons btn btn-primary" *ngIf="adding" (click)="goBack()">Назад</button>
+
+<div *ngIf="!adding" class="user-list row">
+
+	<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 phone-card" *ngFor="let good of goods">
+		<div class="card-img">
+			<img [src]="good.photo">
+		</div>
+		<div class="card-block">
+			<div class="card-title">
+				Название: {{ good.name }}
+			</div>
+			<p class="card-text">
+				Остаток: {{ good.qty }}
+			</p>
+		</div>
+
+		<div class="card-buttons">
+			<button class="btn btn-primary" (click)="openGoodById(good.id)">
+				<i>просмотреть</i>
+			</button>
+
+			<button class="btn btn-primary" (click)="buyGoodById(good)">
+				<i>купить</i>
+			</button>
+		</div>
+
+	</div>
+
+</div>
+
+<div class="myForm" *ngIf="adding">
+	<app-updating-form [good]="good" (edit)="finishAdding($event)"> </app-updating-form>
+</div>
